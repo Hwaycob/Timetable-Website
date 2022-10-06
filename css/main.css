@@ -1,0 +1,138 @@
+/*
+ * CSCI 1170: Introduction to Web Design and Development
+ * Winter 2021 (Online edition)
+ * Author: Dr. Raghav V. Sampangi (raghav@cs.dal.ca)
+ *
+ * This file contains the main CSS file for all pages on this website.
+ * 
+ */
+
+ /* Style class for the web page - Added by Jacob Domingo*/
+ :root {
+    --list-style-type-design: none;
+}
+
+/* General web page styles */
+body {
+	font-family: Arial, Helvetica sans-serif;
+}
+
+/* Main container styles */
+.pg-header {
+	height: 10vh;
+	background-color: steelblue;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 1em;
+}
+.pg-main-content {
+	min-height: 60vh;
+	padding: 1em;
+	font-size: 16px;
+}
+.pg-footer {
+	height: 10vh;
+	background-color: black;
+	color: white;
+	padding: 1em;
+}
+
+/* Header content styles */
+.pg-header > h1 {
+	margin: 0;
+	flex: 1;
+}
+
+/* Heading styles: applies to both H2 and H3 */
+article > h2, section > h3 {
+	color: steelblue;
+	font-weight: lighter;
+}
+
+/* Main navigation styles */
+.pg-main-nav {
+	width: 400px;
+}
+.pg-main-nav ul{ 
+	list-style-type: var(--list-style-type-design);
+	display: flex;
+	justify-content: space-between;
+}
+.pg-main-nav a:link,
+.pg-main-nav a:visited {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.pg-main-nav a:hover,
+.pg-main-nav a:active {
+	color: gold;
+}
+
+/* Image styling */
+.img-link-container {
+	display: flex;
+	justify-content: space-between;
+}
+.sinfo-img {
+	width: 24vw;
+}
+
+/* Timetable styles - Added by Jacob Domingo*/
+#timetable-data-container{
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	row-gap: 10px;
+}
+#timetable-data-container > h3{
+	grid-column: -1/1;
+	color: steelblue;
+}
+#timetable-data-container > p{
+	text-align: center;
+	font-size: 14px;
+	padding: 5px 0 5px 0;
+}
+
+/* Learned about nth-of-type() through W3schools.com:
+   URL: https://www.w3schools.com/cssref/sel_nth-of-type.asp
+   Date Accessed: April 5, 2021
+*/
+p:nth-of-type(odd){
+	background-color: lightsteelblue;
+}
+p:nth-of-type(even){
+	background-color: lightyellow;
+}
+
+/* Media Queries - Added by Jacob Domingo*/
+@media screen and (max-width: 840px){ /* Desktop view to Mobile view */
+	.pg-main-content{
+		font-size: 20px; /* I made a default font size for the desktop view and just multipled 1.2 to it to get 20px*/
+	}
+	.pg-header{
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		width: 100vw;
+	}
+	.pg-main-nav{
+		text-align: center;
+		margin: 0 auto;
+	}
+	.sinfo-img {
+		width: 75vw;
+		padding: 0 10% 0 10%;
+	}
+	.img-link-container {
+		display: block;
+	}
+	#timetable-data-container {
+		font-size: 18px; /* I made a default font size for the desktop view and just multipled 1.2 to it to get ~18px*/
+		display: block;
+	}
+	#timetable-data-container > p{
+		margin: 0px;
+	}
+}
