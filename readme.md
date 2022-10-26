@@ -1,14 +1,14 @@
 # CSCI 1170: Intro to Web Design & Development
 
-## Assignment 4
+# This project website is a personal made project as a school project.
 
-### Student Information
-* Name: Jacob Ismael C. Domingo
-* Banner ID (B00 #): B00859343
-* Dal Email: jc298378@dal.ca
+Author: Jacob Ismael C. Domingo
 
-### Citations
-1. The dummy text for the two paragraphs of content in index.html was generated using: URL: http://www.dummytextgenerator.com/, Date accessed: March 15, 2021
-2. The images for used in index.html were created by Raghav Sampangi using Microsoft PowerPoint on March 15, 2021.
-3. Normalize.css is used in this website, and it is developed by Nicolas Gallagher. Available at URL: https://necolas.github.io/normalize.css/, Date accessed: 15 March 2021
-4. Learned about nth-of-type() through W3schools.com: https://www.w3schools.com/cssref/sel_nth-of-type.asp, Date Accessed: April 5, 2021
+B00#: B00859343
+
+Email: jc298378@dal.ca
+
+School: Dalhousie University
+
+About the Website
+This website is a responsive website that was created using Visual Studio Code and programming languages like HTML, CSS and JavaScript. This website is a school timetable website where users can look up a timetable where it lists all the information about each courses such as course name, course time, course day, and location of the course. One of the key features in this website is the responsive element where the physical look of the website change depending on the device the user is using to access the website (Phone, Tablet, and Computer view).
